@@ -9,3 +9,65 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+
+/* styles shared */
+
+.display-flex {
+  display: flex;
+}
+
+/* navigation style */
+
+.bg-colour {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.navigation,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.navigation {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item {
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  margin-right: 30px;
+  font-size: 18px;
+}
+.nav-header {
+  font-size: 45px;
+}
+/* banner styles */
+.banner-img {
+  width: 100%;
+}
+.banner {
+  text-align: center;
+}
+.banner-header {
+  font-size: 64px;
+  font-weight: 700;
+}
+.banner-contain {
+  font-size: 18px;
+  font-weight: 400;
+}
+.btn-primary {
+  background-color: rgb(255, 144, 14);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 21px 25px;
+}
+/* responsive header */
+@media screen and (max-width: 576px) {
+  .navigation,
+  .nav-links {
+    flex-direction: column;
+  }
+}
